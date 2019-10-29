@@ -40,7 +40,7 @@ printf "\n"
 
 # install oh-my-zsh
 printf "checking if oh-my-zsh is installed...\n"
-if [ ! -d $ZSH_CUSTOM ];
+if [ ! -d ${ZSH_CUSTOM} ];
 	then
 		printf "oh-my-zsh not installed. now installing...\n"
 		sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -52,11 +52,11 @@ printf "\n"
 
 # install powerlevel10k
 printf "checking if powerlevel10k is installed...\n"
-if [ ! -d $ZSH_CUSTOM/themes/powerlevel10k ];
+if [ ! -d ${ZSH_CUSTOM}/themes/powerlevel10k ];
 	then
 		git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 		echo "# p10k config" >> ~/.zshrc
-		echo "source $ZSH_CUSTOM/themes/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
+		echo "source ${ZSH_CUSTOM}/themes/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
 		echo "ZSH_THEME=powerlevel10k/powerlevel10k" >> ~/.zshrc
 	else
 		printf "powerlevel10k is already installed.\n"
@@ -93,7 +93,7 @@ printf "checking if powerlevel10k is configured...\n"
 if [ ! -f ~/.p10k.zsh ]
 	then
 		printf "importing powerlevel10k configuration...\n"
-		git clone https://github.com/gknoop/my-ubuntu-config/blob/master/dotfiles/.p10k.zsh ~/
+		cp ../dotfiles/.p10k.zsh ~/
 		echo "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" >> ~/.zshrc
 	else
 		printf "there is already a config file for powerlevel10k.\n"
