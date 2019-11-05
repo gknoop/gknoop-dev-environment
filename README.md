@@ -1,2 +1,2 @@
-# my-ubuntu-config
-scripts and files to automate setting up Ubuntu 18.
+# my-kbuntu-config
+scripts and files to automate setting up Kubuntu 18.
