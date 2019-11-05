@@ -4,7 +4,7 @@
 mkdir ~/Downloads/gde && cd ~/Downloads/gde
 
 # Bat
-apt install bat -y
+# repo not available for (k)Ubuntu 18. need to set up automated command-based install for asset file from latest release.
 
 # Caffeine
 apt install caffeine -y
