@@ -24,6 +24,9 @@ mv firefox firefox-dev-edition
 # Latte Dock
 apt install latte-dock -y
 
+# Neofetch
+apt install neofetch -y
+
 # Nextcloud
 add-apt-repository ppa:nextcloud-devs/client
 apt update
