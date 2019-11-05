@@ -3,6 +3,9 @@
 # make directory for install files, then move there
 mkdir ~/Downloads/gde && cd ~/Downloads/gde
 
+# Bat
+apt install bat -y
+
 # Caffeine
 apt install caffeine -y
 
