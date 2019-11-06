@@ -20,3 +20,7 @@ Currently, the following are included:
 ## Server
 - Docker
 - Docker-compose
+
+## Theming
+- [Arc KDE](https://github.com/PapirusDevelopmentTeam/arc-kde)
+- [Breeze Dark - White](https://www.gnome-look.org/p/1259380/)
