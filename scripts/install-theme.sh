@@ -10,4 +10,4 @@ wget -O breeze-white.tar.gz "https://dllb2.pling.com/api/files/download/id/15374
 mkdir -p ~/.kde/share/icons
 tar -xvzf breeze-white.tar.gz -C ~/.kde/share/icons
 rm ~/.kde/share/icons/breeze-white.tar.gz
-update-icon-caches /usr/share/icons/*
+update-icon-caches ~/.kde/share/icons/*
